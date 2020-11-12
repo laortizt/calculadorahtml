@@ -96,19 +96,43 @@ function mostrarResultado(){
             document.getElementById('data').value = division
             break;
     }
+}
 
-/*function mostrardia(){
-    let valorInput=document.getElementById('data').value
-    let arreglo= valorInput.split("")
+    function mostrarDia(){
+        let dia= prompt("Ingresa el dia")
+    
+        switch(dia){
+            case 'lunes':
+                prompt("hoy es lunes")
+                alert.log("Digita el dia")
+                break;
+            case 'martes':
+                prompt("hoy es martes")
+                alert.log("Digita el dia")
+                break;
+            case 'miercoles':
+                prompt("hoy es miercoles")
+                alert.log("Digita el dia")
+                break;
+            case 'jueves':
+                prompt("hoy es jueves")
+                alert.log("Digita el dia")
+                break;
+            case 'viernes':
+                prompt("hoy es viernes")
+                alert.log("Digita el dia")
+                break;
+            case 'sabado':
+                prompt("hoy es sabado")
+                alert.log("Digita el dia")
+                break;
+            case 'domingo':
+                prompt("hoy es domingo")
+                alert.log("Digita el dia")
+                default:
+                    alert("Dato Invalido")
 
-    switch(arreglo[1]){
-        case 'lunes':
-            alert.log("lunes")
-            let lunes = parseInt(arregl[0]) + parseInt(arreglo[2])
-            document.getElementById("data").value = lunes
-            break;
     }
-*/
-}
 
 }
+
