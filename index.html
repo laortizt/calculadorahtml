@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator" class="colum">
+            <h1 style="text-align: center;color: white;">Calculadora</h1>
+            <div class="calculator-info">
+                <input type="text"id="data" disabled/> 
+            </div>
+            <div class="calculator-data row">
+                <div class="row numeros">
+                    <input type="button" class="btn-num" value="1" onclick="printNum(this.value)"> 
+                    <input type="button" class="btn-num" value="2" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="3" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="4" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="5" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="6" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="7" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="8" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="9" onclick="printNum(this.value);">
+                    <input type="button" class="btn-num" value="Limpiar" onclick="limpiar(this.value);"style="border-radius: 20px; background-color: rgb(199, 130, 193);color: white ;">
+                    <input type="button" class="btn-num" value="0" onclick="printNum(this.value);">
+                    <input type="button" class="btn-result" value="=" onclick="mostrarResultado(this.value);">
+                </div>
+                <div class="column signos">
+                    <input type="button" class="btn-signo" onclick="printOper(this.value);" value="+">
+                    <input type="button" class="btn-signo" onclick="printOper(this.value);" value="-">
+                    <input type="button" class="btn-signo" onclick="printOper(this.value);" value="*">
+                    <input type="button" class="btn-signo" onclick="printOper(this.value);" value="/">
+
+                </div>
+            </div>
+
+        </div>    
+        <input type="button" class="text" value="preguntar dia" onclick="mostrarDia(this.value)">
+
+    </div>
+
+    <footer>
+        <p> <i class="fas fa-cat"></i> Hecho por Luz Adriana Ortiz Torres <i class="fas fa-cat"></i>
+    </footer>
+    <script src="./scripts.js"></script> 
+</body>
+</html>
