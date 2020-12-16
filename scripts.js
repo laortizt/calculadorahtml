@@ -97,7 +97,7 @@ function mostrarResultado(){
             break;
     }
 }
-
+/*
     function mostrarDia(){
         let dia= prompt("Ingresa el dia")
     
@@ -135,4 +135,4 @@ function mostrarResultado(){
     }
 
 }
-
+*/
